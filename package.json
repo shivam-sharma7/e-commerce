@@ -1,0 +1,36 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "ci": "npm run check-format",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "e-commerce",
+    "store",
+    "admin",
+    "dashboard"
+  ],
+  "author": "Shivam Sharma",
+  "type": "module",
+  "license": "MIT",
+  "description": "This is an e-commerce store and admin dashboard project.",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.1"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "prettier": "3.3.3"
+  }
+}
